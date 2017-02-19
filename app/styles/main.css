@@ -27,3 +27,52 @@ body {
   line-height: 1;
   letter-spacing: -1px;
 }
+
+.button_nav{
+  width:100%;
+  text-align:center;
+  padding:5px;
+}
+
+#card{
+  height:150px;
+  width:150px;
+  display:block;
+  float:left;
+  text-align: center;
+
+}
+
+#portfolio{
+
+}
+#card h2{
+  border-top:solid black 1px;
+  border-bottom:solid black 1px;
+}
+
+#me{
+  width:300px;
+  height:300px;
+  padding:5px;
+}
+#carousel{
+  width:100%;
+
+  height:100%;
+}
+
+#web_icon{
+  padding:10px;
+  width:200px;
+  height:200px;
+  float:left;
+}
+.button_nav{}
+
+#graphic_icon{
+  padding:10px;
+  width:200px;
+  height:200px;
+  float:right;
+}
