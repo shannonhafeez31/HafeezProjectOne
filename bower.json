@@ -6,7 +6,8 @@
     "modernizr": "~2.8.1",
     "materialize": "^0.98.0",
     "d3": "^4.5.1",
-    "animate.css": "^3.5.2"
+    "animate.css": "^3.5.2",
+    "fullpage.js": "^2.9.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",

@@ -1,25 +1,18 @@
 $(document).ready(function(){
+
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#e1bee7'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+
+
    $('ul.tabs').tabs('select_tab', 'tab_id');
 
-  $('.carousel.carousel-slider').carousel({fullWidth: true});
 
-  $('#showAbout').click(function() {
-    $('html,body').animate({
-        scrollTop: $('.aboutme').offset().top},
-        'slow');
-});
 
-$('#showSkills').click(function() {
-  $('html,body').animate({
-      scrollTop: $('.skils').offset().top},
-      'slow');
-});
 
-$('#showPortfolio').click(function() {
-  $('html,body').animate({
-      scrollTop: $('.portfolio').offset().bottom},
-      'slow');
-});
 
 
 });

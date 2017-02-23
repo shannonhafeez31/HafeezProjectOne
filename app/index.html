@@ -13,6 +13,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/materialize/bin/materialize.css" />
     <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="/bower_components/fullpage.js/dist/jquery.fullpage.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -28,224 +29,151 @@
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <div class = "container">
-
- <div class="col s10 pink .center-align">
-
-   <div class="center-align container">
-   <br><br>
-     <img src="images/me.jpg" id = "me" alt="" class="circle responsive-img">
-  <br><br>
-   <div class="row">
-     <h5 class=" header col s12 white-text">Web Designer~ Graphic Designer~ Marketing</h5>
-
-   </div>
-
- </div>
-   <div class = "button_nav">
-   <button><a href = "#aboutme">About Me</a></button>
-   <button><a href = "#skills">My Skills</a></button>
-   <button><a href = "#portfolio">Portfolio </a></button>
-  </div>
 
 
-</div>
+  <ul id="menu">
+  	<li data-menuanchor="firstPage"><a href="#firstPage" class = "active">First slide</a></li>
+  	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+  	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+  	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+  </ul>
 
-<br><br>
-<div class = "container">
+    <div id="fullpage">
+      <div class="section">
+        <div class="center-align container">
+         <br><br>
+           <img src="images/me.jpg" id = "me" alt="" class="circle responsive-img">
+        <br><br>
+         <div class="row">
+           <h5 class=" header col s12 white-text">Web Designer~ Graphic Designer~ Marketing</h5>
 
-<div id = "aboutme" class="section scrollspy">
-<div class="row">
-  <div class="col s12 ">
-    <ul class="tabs .center-align">
-      <li class="tab col s3"><a href="#test1">Introduction</a></li>
-      <li class="tab col s3"><a href="#test2">My Background</a></li>
-      <li class="tab col s3"><a href="#test3">My Hobbies</a></li>
-      <li class="tab col s3"><a href="#test4">My Goals</a></li>
-    </ul>
-  </div>
-  <div id="test1" class="col s12 center">
-    <img src = "images/web_icon.png" id = "web_icon"><h5 class = "pink-text">Hi, My name is Shannon Hafeez</h5>
-
-    <p>I am an aspiring web designer who has experience with graphic design and marketing.</p>
-
-  </div>
-  <div id="test2" class="col s12 center">
-    <img src = "images/graphic_icon.png" id = "graphic_icon"><h5 class = "pink-text">A little about me..</h5>
-
-    <p>I was born in Orlando, FL and I am currently in my senior year at the University of Central Florida finishing up my Bachelor's Degree in Digital Media and Web Design. I chose this career path after taking courses in high school pertaining to digital media.What I love most about web design is that it is a mix of coding and creativity.
-    <p>I have a family of five, which includes my Mom, Dad and two brothers.</p>
-
-  </div>
-  <div id="test3" class="col s12">Test 3</div>
-
-  <div id="test4" class="col s12">Test 4</div>
-</div>
-</div>
-</div>
-
-
-
-<div id = "skills" class="section scrollspy">
-	 <div class="carousel carousel-slider center" data-indicators="true" id = "firstSlider">
-			<div class="carousel-fixed-item center">
-			  <a class="btn waves-effect white grey-text darken-text-2">Next Page</a>
-			</div>
-			<div class="carousel-item  pink  white-text center-align" href="#one!">
-			  <h2>My Skills</h2>
-			  <p class="white-text">I have experience with coding languages, the Adobe Creative Suite and Other Programs  </p>
-			</div>
-			<div class="carousel-item #8e24aa pink lighten-2 white-text" id = "me "href="#two!">
-			<h5 class = "valign">Click on the skill to see how proficient I am(Remember: bigger means better).</h5>
-			<div class = "center-align chart">
-			 <svg width="500px" height="500px">
-				<circle id = "html_circle" cx="70" cy="70" r="50" fill="green" />
-				 <circle id = "css_circle" cx="150" cy="150" r="50" fill="purple" />
-				 <circle id = "js_circle" cx="70" cy="160" r="50" fill="pink" />
-				 <text id = "html_text" x="70" y="70"
-					font-family="sans-serif"
-					font-size="20px"
-					text-anchor="middle"
-					fill="red">Html
-				 </text>
-
-
-				  <text id = "css_text" x="130" y="150"
-					  font-family="sans-serif"
-					  font-size="20px"
-					  fill="red">Css
-				  </text>
-
-				  <text id = "js_text" x="70" y="160"
-					font-family="sans-serif"
-					font-size="20px"
-					text-anchor="middle"
-					fill="red">Javascript
-				 </text>
-
-				 <animate
-				  xlink:href = "#html_circle"
-				  attributeName = "r"
-				  from = "50"
-				  to = "60"
-				  dur = "1s"
-				  begin = "click"
-				  fill = "freeze"/>
-
-				  <animate
-				  xlink:href = "#css_circle"
-				  attributeName = "r"
-				  from = "50"
-				  to = "60"
-				  dur = "1s"
-				  begin = "click"
-				  fill = "freeze"/>
-
-				  <animate
-				  xlink:href = "#js_circle"
-				  attributeName = "r"
-				  from = "50"
-				  to = "40"
-				  dur = "1s"
-				  begin = "click"
-				  fill = "freeze"/>
-
-				</svg>
-
-				</div>
-			</div>
-
-		</div>
-
-  </div>
-<br><br>
-
-<div id= "portfolio" class="section scrollspy">
-<h2 class =  " center-align pink-text"> My Work</h2>
-
-<div class ="col s12 center-align ">
-    <div class="card " id = "card">
-      <div class="card-image">
-        <img src="images/book-icon.png">
-
-        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+         </div>
       </div>
     </div>
+      <div class="section">
+        <div class="row" id = "tab">
+          <div class="col s12 ">
+            <ul class="tabs .center-align">
+              <li class="tab col s3"><a href="#test1">Introduction</a></li>
+              <li class="tab col s3"><a href="#test2">My Background</a></li>
+              <li class="tab col s3"><a href="#test3">My Hobbies</a></li>
+              <li class="tab col s3"><a href="#test4">My Goals</a></li>
+            </ul>
+          </div>
+          <div id="test1" class="col s12 center">
+            <img src = "images/web_icon.png" id = "web_icon"><h5 class = "pink-text">Hi, My name is Shannon Hafeez</h5>
 
+            <p>I am an aspiring web designer who has experience with graphic design and marketing.</p>
 
-    <div class="card" id = "card">
-      <div class="card-image">
-        <img src="images/showcase.png">
+          </div>
+          <div id="test2" class="col s12 center">
+            <img src = "images/graphic_icon.png" id = "graphic_icon"><h5 class = "pink-text">A little about me..</h5>
 
-        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            <p>I was born in Orlando, FL and I am currently in my senior year at the University of Central Florida finishing up my Bachelor's Degree in Digital Media and Web Design. I chose this career path after taking courses in high school pertaining to digital media.What I love most about web design is that it is a mix of coding and creativity.
+            I have a family of five, which includes my Mom, Dad and two brothers.</p>
+
+          </div>
+          <div id="test3" class="col s12">Test 3</div>
+
+          <div id="test4" class="col s12">Test 4</div>
+          </div>
+          </div>
+
+      <div class="section">
+       <div class="slide" data-anchor="slide1">
+        <h2 class = "center-align">My Skills</h2>
+			  <p class="white-text center-align">I have experience with coding languages, the Adobe Creative Suite and Other Programs  </p>
+       </div>
+       <div class="slide" data-anchor="slide2"> Slide 2 </div>
+       <div class="slide" data-anchor="slide3"> Slide 3 </div>
+
       </div>
-    </div>
+      <div class="section">
+        <h2 class =  " center-align pink-text"> My Work</h2>
+
+          <div class ="col s12 center-align ">
+            <div class="card " id = "card">
+              <div class="card-image">
+                <img src="images/book-icon.png">
+
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+              </div>
+            </div>
+
+
+            <div class="card" id = "card">
+              <div class="card-image">
+                <img src="images/showcase.png">
+
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+              </div>
+            </div>
 
 
 
-    <div class="card" id = "card">
-      <div class="card-image">
-        <img src="images/lakehouse.png">
+            <div class="card" id = "card">
+              <div class="card-image">
+                <img src="images/lakehouse.png">
 
-        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-      </div>
-    </div>
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+              </div>
+            </div>
 
-      <div class="card" id = "card">
-        <div class="card-image">
-          <img src="images/bpop.png">
+              <div class="card" id = "card">
+                <div class="card-image">
+                  <img src="images/bpop.png">
 
-          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-        </div>
-      </div>
-
-
-      <div class="card" id = "card">
-        <div class="card-image">
-          <img src="images/sugar.png">
-
-          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-        </div>
-      </div>
-
-      <div class="card" id = "card">
-        <div class="card-image">
-          <img src="images/dmconnect.png">
-
-          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-        </div>
-      </div>
-
-      <div class="card" id = "card">
-        <div class="card-image">
-          <img src="images/bmusic.png">
-
-          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-        </div>
-      </div>
-
-      <div class="card" id = "card">
-        <div class="card-image">
-          <img src="images/savegreen.png">
-
-          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-        </div>
-      </div>
-
-      <div class="card" id = "card">
-        <div class="card-image">
-          <img src="images/hax.png">
-
-          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-        </div>
-      </div>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+              </div>
 
 
-    </div>
+              <div class="card" id = "card">
+                <div class="card-image">
+                  <img src="images/sugar.png">
+
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+              </div>
+
+              <div class="card" id = "card">
+                <div class="card-image">
+                  <img src="images/dmconnect.png">
+
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+              </div>
+
+              <div class="card" id = "card">
+                <div class="card-image">
+                  <img src="images/bmusic.png">
+
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+              </div>
+
+              <div class="card" id = "card">
+                <div class="card-image">
+                  <img src="images/savegreen.png">
+
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+              </div>
+
+              <div class="card" id = "card">
+                <div class="card-image">
+                  <img src="images/hax.png">
+
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+              </div>
+
+
+            </div>
   </div>
 
 </div>
-</div>
+
 
 
 
@@ -270,6 +198,7 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/materialize/bin/materialize.js"></script>
     <script src="/bower_components/d3/d3.js"></script>
+    <script src="/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
