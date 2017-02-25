@@ -120,6 +120,7 @@ body {
 	margin:0;
 }
 
+
 .showWork{
   background-color: white;
   text-align: center;
@@ -128,7 +129,23 @@ body {
   margin: 0px auto;
 }
 
+
 #tab a{
   color: #1bbc9b;
 
+}
+
+#description{
+  border: solid 1px purple;
+  height: 100px;
+}
+
+#programs{
+  border: solid 1px purple;
+  height:100px;
+
+}
+
+#center{
+  margin:0 auto;
 }

@@ -18,6 +18,7 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
@@ -32,10 +33,10 @@
 
 
   <ul id="menu">
-  	<li data-menuanchor="firstPage"><a href="#firstPage" class = "active">First slide</a></li>
-  	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-  	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-  	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+  	<li data-menuanchor="firstPage"><a href="#firstPage" class = "active">Welcome</a></li>
+  	<li data-menuanchor="secondPage"><a href="#secondPage">About Me</a></li>
+  	<li data-menuanchor="3rdPage"><a href="#3rdPage">Skills</a></li>
+  	<li data-menuanchor="4thpage"><a href="#4thpage">Portfolio</a></li>
   </ul>
 
     <div id="fullpage">
@@ -56,8 +57,8 @@
             <ul class="tabs .center-align">
               <li class="tab col s3"><a href="#test1">Introduction</a></li>
               <li class="tab col s3"><a href="#test2">My Background</a></li>
-              <li class="tab col s3"><a href="#test3">My Hobbies</a></li>
-              <li class="tab col s3"><a href="#test4">My Goals</a></li>
+              <li class="tab col s3"><a href="#test3">Education</a></li>
+              <li class="tab col s3"><a href="#test4">Work Experience</a></li>
             </ul>
           </div>
           <div id="test1" class="col s12 center">
@@ -72,79 +73,43 @@
             <p>I was born in Orlando, FL and I am currently in my senior year at the University of Central Florida finishing up my Bachelor's Degree in Digital Media and Web Design. I chose this career path after taking courses in high school pertaining to digital media.What I love most about web design is that it is a mix of coding and creativity.
             I have a family of five, which includes my Mom, Dad and two brothers.</p>
 
-          </div>
-          <div id="test3" class="col s12">Test 3</div>
+            <h5 class = "pink-text">Hobbies</h5>
+            <p> Reading, Listening to Bollywood Music, Watching Movies, Coloring, and Shopping</p>
 
-          <div id="test4" class="col s12">Test 4</div>
+          </div>
+          <div id="test3" class="col s12 center">
+          <img src = "images/edu.png" id = "graphic_icon"><h5 class = "pink-text">My Education History</h5>
+          <h5>University of Central Florida, Orlando FL</h5>
+            <p>B.A in Digital Media Web Design w/ Minor: Marketing</p>
+
+
+          <h5 class = "pink-text">Awards and Honors</h5> <p>President's Honor Roll, UCF Scholars, Golden Key Honor Society</p>
+          </div>
+          <div id="test4" class="col s12 center">
+          <img src = "images/job.png" id = "graphic_icon"><h5 class = "pink-text">Work Experience</h5>
+          <h5>Burlington Coat Factory-Customer Service Representative</h5>
+          <p>June 2015-<i>current</i></p>
+          <h5 calss = "pink-text">Awards</h5> <p> Employee of the Month-August 2016</p>
+
+
+          </div>
           </div>
           </div>
 
       <div class="section">
-       <div class="slide" data-anchor="slide1">
         <h2 class = "center-align">My Skills</h2>
 			  <p class="white-text center-align">I have experience with coding languages, the Adobe Creative Suite and Other Programs  </p>
        </div>
-       <div class="slide" data-anchor="slide2"> Slide 2 </div>
-       <div class="slide" data-anchor="slide3"> Slide 3 </div>
 
-      </div>
-      <div class="section">
+      <div class="section ">
+        <div class="slide" data-anchor="slide1">
         <h2 class =  " center-align pink-text"> My Work</h2>
 
-
-        <div class = "showWork">
-          <div class = "donutKing">
-            <h2> Donut King</h2>
-
-          </div>
-
-          <div class = "showcase">
-            <h2>First Showcase Site</h2>
-
-          </div>
-
-          <div class = "lake">
-            <h2> Lake House</h2>
-
-          </div>
-
-          <div class = "balloon">
-            <h2> Balloon Pop</h2>
-
-          </div>
-
-          <div class = "cupcake">
-            <h2>Sugar and Spice Cupcake Shop</h2>
-
-          </div>
-
-          <div class = "dmc">
-            <h2> Digital Media Connections</h2>
-
-          </div>
-
-          <div class = "bmusic">
-            <h2> Bollywood Music </h2>
-
-          </div>
-
-          <div class = "savegreen">
-            <h2>Save Green Recycling App</h2>
-
-          </div>
-
-          <div class = "hax">
-            <h2>HAX - Social Art Sharing</h2>
-
-          </div>
-
-        </div>
-          <div class ="col s12 center-align ">
+        <div class = "container">
+          <div class ="col s12">
             <div class="card " id = "card">
               <div class="card-image">
                 <img src="images/book-icon.png">
-
-                <a class="btn-floating halfway-fab waves-effect waves-light red" id = "showDonut"><i class="material-icons">add</i></a>
               </div>
             </div>
 
@@ -152,8 +117,6 @@
             <div class="card" id = "card">
               <div class="card-image">
                 <img src="images/showcase.png">
-
-                <a class="btn-floating halfway-fab waves-effect waves-light red" id = "showShowcase"><i class="material-icons">add</i></a>
               </div>
             </div>
 
@@ -163,7 +126,7 @@
               <div class="card-image">
                 <img src="images/lakehouse.png">
 
-                <a class="btn-floating halfway-fab waves-effect waves-light red" id = "showLake"><i class="material-icons">add</i></a>
+
               </div>
             </div>
 
@@ -171,7 +134,7 @@
                 <div class="card-image">
                   <img src="images/bpop.png">
 
-                  <a class="btn-floating halfway-fab waves-effect waves-light red" id = "showBalloon"><i class="material-icons">add</i></a>
+
                 </div>
               </div>
 
@@ -180,7 +143,7 @@
                 <div class="card-image">
                   <img src="images/sugar.png">
 
-                  <a class="btn-floating halfway-fab waves-effect waves-light red" id = "showCupcakes"><i class="material-icons">add</i></a>
+
                 </div>
               </div>
 
@@ -188,7 +151,7 @@
                 <div class="card-image">
                   <img src="images/dmconnect.png">
 
-                  <a class="btn-floating halfway-fab waves-effect waves-light red" id = "showDmc"><i class="material-icons">add</i></a>
+
                 </div>
               </div>
 
@@ -196,28 +159,149 @@
                 <div class="card-image">
                   <img src="images/bmusic.png">
 
-                  <a class="btn-floating halfway-fab waves-effect waves-light red" id= "showBmusic"><i class="material-icons">add</i></a>
+
                 </div>
               </div>
 
-              <div class="card" id = "card">
-                <div class="card-image">
-                  <img src="images/savegreen.png">
-
-                  <a class="btn-floating halfway-fab waves-effect waves-light red" id= "showGreen"><i class="material-icons">add</i></a>
-                </div>
-              </div>
 
               <div class="card" id = "card">
                 <div class="card-image">
                   <img src="images/hax.png">
 
-                  <a class="btn-floating halfway-fab waves-effect waves-light red" id = "showHax"><i class="material-icons">add</i></a>
+
                 </div>
               </div>
+            </div>
 
+          </div>
 
             </div>
+
+            <div class="slide" data-anchor="slide2">
+
+              <h2 class= "center-align"> Donut King</h2>
+              <div class="row center">
+              <div class="col s6" id = "description">
+                <h5>Description</h5>
+                <p> This was a rebranding project for the Donut King Company</p>
+              </div>
+              <div class="col s6" id = "programs">
+                <h5>Languages/Programs:</h5><p>Adobe Photoshop</p>
+              </div>
+              <img class="materialboxed" width="650" src="images/donutking.jpg" id = "center">
+              </div>
+
+            </div>
+
+            <div class="slide" data-anchor="slide3">
+
+              <h2 class= "center-align"> Showcase</h2>
+              <div class="row center">
+              <div class="col s6" id = "description">
+                <h5> DEscription</h5>
+                <p> This was my first portfolio site made using Adobe Dreamweaver.</p>
+              </div>
+              <div class="col s6" id = "programs">
+                <h5>Languages/Programs:</h5><p>Adobe Photoshop and Dreamweaver</p>
+              </div>
+              <img class="materialboxed" width="750" src="images/showcaseimg.png" id = "center">
+              </div>
+
+            </div>
+
+            <div class="slide" data-anchor="slide4">
+
+              <h2 class= "center-align">Lake House</h2>
+              <div class="row center">
+              <div class="col s6" id = "description">
+                <h5>Description</h5>
+                <p>Using Maya and Photoshop, I created a scenery piece.</p>
+              </div>
+              <div class="col s6" id = "programs">
+                <h5>Languages/Programs:</h5><p>Autodesk Maya and Adobe Photoshop</p>
+              </div>
+              <img class="materialboxed" width="650" src="images/lakehouseimg.jpg" id = "center">
+              </div>
+
+            </div>
+
+            <div class="slide" data-anchor="slide5">
+
+              <h2 class= "center-align">Balloon Pop Game</h2>
+              <div class="row center">
+              <div class="col s6" id = "description">
+                <h5>Description</h5>
+                <p>This is a fun platformer game, where the goal is to make it to the end without bursting your balloon.</p>
+              </div>
+              <div class="col s6" id = "programs">
+                <h5>Languages/Programs:</h5><p>Html, Css, Javascript</p>
+              </div>
+              <img class="materialboxed" width="750" src="images/bpopimg.png" id = "center">
+              </div>
+
+            </div>
+
+            <div class="slide" data-anchor="slide6">
+
+              <h2 class= "center-align">Sugar and Spice Cupcake Shop</h2>
+              <div class="row center">
+              <div class="col s6" id = "description">
+                <p>This is a website for Sugar and Spice Cupcake Shop. Using php and mySQL, you are able to create an account and view your orders placed.</p>
+              </div>
+              <div class="col s6" id = "programs">
+                <h5>Languages/Programs Used:</h5><p>Html, Css, Php, and mySQL</p>
+              </div>
+              <img class="materialboxed" width="750" src="images/cupcakeimg.png" id = "center">
+              </div>
+
+            </div>
+
+            <div class="slide" data-anchor="slide7">
+
+              <h2 class= "center-align">Digital Media Connections</h2>
+              <div class="row center">
+              <div class="col s6" id = "description">
+                <p>This was team-based project made to provide students with information about digital media and its programs.</p>
+              </div>
+              <div class="col s6" id = "programs">
+                <h5>Languages/Programs:</h5><p>WordPress and Adobe Photoshop</p>
+              </div>
+              <img class="materialboxed" width="750" src="images/dmcimg.png" id = "center">
+              </div>
+
+            </div>
+
+            <div class="slide" data-anchor="slide7">
+
+              <h2 class= "center-align">Bollywood Music Reviews</h2>
+              <div class="row center">
+              <div class="col s6" id = "description">
+                <p> This site provides honest reviews on recent Bollywood music albums and singles.</p>
+              </div>
+              <div class="col s6" id = "programs">
+                <h5>Languages/Programs:</h5><p>Html, Css, Javascript, Jquery,Php, Materialize </p>
+              </div>
+              <img class="materialboxed" width="750" src="images/bmusicimg.png" id = "center">
+              </div>
+
+            </div>
+
+            <div class="slide" data-anchor="slide8">
+
+              <h2 class= "center-align">HAX-Social Art Sharing</h2>
+              <div class="row center">
+              <div class="col s6" id = "description">
+                <p> This was a team based project to create a social artwork sharing site for all artists.</p>
+              </div>
+              <div class="col s6" id = "programs">
+                <h5>Languages/Programs:</h5><p>Adobe Photoshop, Html, Css, Javascript,Php, mySQL  </p>
+              </div>
+              <img class="materialboxed" width="750" src="images/haximg.png" id = "center">
+              </div>
+
+            </div>
+
+
   </div>
 
 </div>
