@@ -119,3 +119,16 @@ body {
 	padding: 0;
 	margin:0;
 }
+
+.showWork{
+  background-color: white;
+  text-align: center;
+  width:75%;
+  height:auto;
+  margin: 0px auto;
+}
+
+#tab a{
+  color: #1bbc9b;
+
+}
