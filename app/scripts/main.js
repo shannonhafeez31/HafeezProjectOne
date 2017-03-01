@@ -5,8 +5,17 @@ $(document).ready(function(){
 				anchors: ['Home', 'About Me', 'My Skills', 'Portfolio'],
 				navigation: true,
 				navigationPosition: 'right',
-				navigationTooltips: ['Home', 'About Me', 'My Skills', 'Portfolio']
+				navigationTooltips: ['Home', 'About Me', 'My Skills', 'Portfolio'],
+				paddingTop: 0,
+        paddingBottom: 0,
+        responsiveWidth: 640,
+        css3: true,
+				onLeave: function(index, nextIndex, direction){
+          if (nextIndex == 3) {
+            circleChart();
+          }
 
+        }
 
 			});
 
@@ -16,8 +25,7 @@ $(document).ready(function(){
 
 //d3 code
 
-
-
+function circleChart(){
 var data = {
     'name': '',
     'children': [
@@ -35,15 +43,25 @@ var data = {
 var diameter = 400,
     format = d3.format(',d');
 
-var bubble = d3.layout.pack()
+var bubble = d3.pack()
     .sort(null)
     .size([diameter, diameter])
     .padding(1.5);
 
-var svg = d3.select('div').append('#circleChart')
+var svg = d3.select('circleChart').append('svg')
     .attr('width', diameter)
     .attr('height', diameter)
-    .attr('class', 'bubble');
+    .attr('class', 'bubble')
+	.on('mousedown', animateFirstStep);
+
+function animateFirstStep(){
+    d3.select(this)
+      .transition()
+        .delay(0)
+        .duration(1000)
+        .attr('r', 10)
+
+};
 
 d3.json(data, function(error, root) {
   var node = svg.selectAll('.node')
@@ -80,6 +98,8 @@ d3.json(data, function(error, root) {
 });
 
 d3.select(self.frameElement).style('height', diameter + 'px');
+
+}
 
 
 
