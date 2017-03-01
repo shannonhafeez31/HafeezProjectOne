@@ -11,9 +11,10 @@ $(document).ready(function(){
         responsiveWidth: 640,
         css3: true,
 				onLeave: function(index, nextIndex, direction){
-          if (nextIndex == 3) {
-            circleChart();
-          }
+
+					if (nextIndex == 2) {
+						$('h5').addClass('animated bounceInRight');
+					}
 
         }
 
@@ -21,6 +22,11 @@ $(document).ready(function(){
 
 
    $('ul.tabs').tabs('select_tab', 'tab_id');
+
+	  $('.carousel.carousel-slider').carousel({fullWidth: true});
+
+
+
 
 
 //d3 code
