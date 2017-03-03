@@ -22,6 +22,14 @@ body {
   padding: 60px;
 }
 
+body, html, .main {
+    height: 100%;
+}
+
+section {
+    min-height: 100%;
+}
+
 .hero-unit h1 {
   font-size: 60px;
   line-height: 1;
@@ -32,6 +40,15 @@ body {
   width:100%;
   text-align:center;
   padding:5px;
+
+
+}
+
+.button_nav a{
+  padding:20px;
+  color:white;
+  border: dotted 2px white;
+
 }
 
 #card{
@@ -66,9 +83,9 @@ body {
   padding:10px;
   width:200px;
   height:200px;
-
+  margin:0, auto;
 }
-
+.button_nav{}
 
 #graphic_icon{
   padding:10px;
@@ -76,42 +93,13 @@ body {
   height:200px;
 
 }
-
-
-.showWork{
-  background-color: white;
-  text-align: center;
-  width:75%;
-  height:auto;
-  margin: 0px auto;
+#skills{
+  background-color: pink;
 }
-
-
-#tab a{
-  color: #1bbc9b;
-
-}
-
-#description{
-  border: solid 1px purple;
-  height: 100px;
-}
-
-#programs{
-  border: solid 1px purple;
-  height:100px;
-
-}
-
-#center{
-  margin:0 auto;
-}
-
-#web_card{
-  width:300px;
-  height:200px;
-}
-
 .chart{
   text-align: center;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+
 }
