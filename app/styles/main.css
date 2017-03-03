@@ -66,9 +66,9 @@ body {
   padding:10px;
   width:200px;
   height:200px;
-  margin:0, auto;
+
 }
-.button_nav{}
+
 
 #graphic_icon{
   padding:10px;
@@ -76,6 +76,42 @@ body {
   height:200px;
 
 }
-#skills{
-  background-color: pink;
+
+
+.showWork{
+  background-color: white;
+  text-align: center;
+  width:75%;
+  height:auto;
+  margin: 0px auto;
+}
+
+
+#tab a{
+  color: #1bbc9b;
+
+}
+
+#description{
+  border: solid 1px purple;
+  height: 100px;
+}
+
+#programs{
+  border: solid 1px purple;
+  height:100px;
+
+}
+
+#center{
+  margin:0 auto;
+}
+
+#web_card{
+  width:300px;
+  height:200px;
+}
+
+.chart{
+  text-align: center;
 }
