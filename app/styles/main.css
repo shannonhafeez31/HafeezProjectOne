@@ -80,6 +80,7 @@ section {
 }
 
 #web_icon{
+
   padding:10px;
   width:200px;
   height:200px;
@@ -97,6 +98,22 @@ section {
   background-color: pink;
 }
 .chart{
+  text-align: center;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+
+}
+
+.chart_two{
+  text-align: center;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+
+}
+
+.chart_three{
   text-align: center;
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 1s;
