@@ -30,6 +30,9 @@ section {
     min-height: 100%;
 }
 
+#full{
+  min-height:100%;
+}
 .hero-unit h1 {
   font-size: 60px;
   line-height: 1;
@@ -49,6 +52,10 @@ section {
   color:white;
   border: dotted 2px white;
 
+}
+
+a:hover {
+    color: black;
 }
 
 #card{
@@ -96,6 +103,12 @@ section {
 }
 #skills{
   background-color: pink;
+  min-height: 100%;
+}
+
+#portfolio{
+  background-color: #e1bee7;
+  min-height: 100%;
 }
 .chart{
   text-align: center;
@@ -105,12 +118,25 @@ section {
 
 }
 
+.card{
+  border: solid 1px purple;
+}
+
 .chart_two{
   text-align: center;
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 1s;
   -webkit-animation-iteration-count: 1;
 
+}
+
+.carousel-item{
+  width: 500px;
+  height:300px;
+}
+.carousel img{
+  width:200%;
+  height:100%;
 }
 
 .chart_three{

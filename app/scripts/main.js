@@ -1,7 +1,11 @@
 $(document).ready(function(){
    $('ul.tabs').tabs('select_tab', 'tab_id');
+   $('.carousel').carousel({
+             dist:2,
+             shift:0,
+             padding:20,
 
-	  $('.carousel').carousel();
+       });
 	 // Add smooth scrolling to all links
 	   $('a').on('click', function(event) {
 
