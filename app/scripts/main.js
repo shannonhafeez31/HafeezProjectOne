@@ -29,10 +29,12 @@ $(document).ready(function(){
 	     } // End if
 	   });
 
-		 $('#intro').addClass('animated infinite bounce');
+     $('.next').click(function() {
+        $('html,body').animate({ scrollTop:$(this).parent().next().offset().top}, 'slow');
 
+ });
 
-$('.chart3').hide();
+     chart();
 
 		 $( '#webBtn' ).click(function() {
         $('.chart_two').fadeOut();
@@ -68,6 +70,8 @@ $('.chart3').hide();
 
  //d3 code
  function chart(){
+
+  d3.select('.chart').selectAll('*').remove();
 var dataset = {
      'children': [{
          'facilityId': 'Microsoft Office',
@@ -144,6 +148,7 @@ var dataset = {
 }
 
 function chartTwo(){
+    d3.select('.chart_two').selectAll('*').remove();
 var dataset = {
     'children': [{
         'facilityId': 'Adobe Photoshop',
@@ -221,6 +226,7 @@ d3.select(self.frameElement)
 
 
 function chartThree(){
+d3.select('.chart_three').selectAll('*').remove();
 var dataset = {
    'children': [{
        'facilityId': 'Microsoft PPT',
