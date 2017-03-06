@@ -34,6 +34,10 @@ $(document).ready(function(){
 
  });
 
+$('#intro').addClass('animated infinite bounce');
+$('#submitbtn').addClass('animated infinite bounce');
+
+
      chart();
 
 		 $( '#webBtn' ).click(function() {

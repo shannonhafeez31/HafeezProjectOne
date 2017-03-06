@@ -18,11 +18,18 @@ body {
 
 }
 
+
+#contact{
+  background-image: url("../images/floral.jpg");
+  min-height:100%;
+
+
+}
 #skills{
   min-height:100%;
 }
 #intro1, #background2, #edu3, #work4{
-  height: 550px;
+  height: 100%;
 }
 
 .hero-unit {
@@ -36,8 +43,26 @@ body {
   padding: 60px;
 }
 
-body, html, .main {
+body, html {
     height: 100%;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size:16px;
+
+}
+h1, h2, h3, h4, h5, h6{
+font-family: 'Simonetta', cursive;
+
+
+}
+
+.next{
+  width:100px;
+  height:50px;
+  background-color:#e91e63;
+  padding:10px;
+  color:white;
+
+  text-align:center;
 }
 
 section {
@@ -84,15 +109,10 @@ a:hover {
 #portfolio{
 
 }
-#card h2{
-  border-top:solid black 1px;
-  border-bottom:solid black 1px;
-}
 
 #me{
-  width:300px;
-  height:300px;
-  padding:5px;
+  width:40%;
+  height:40%;
 }
 #carousel{
   width:100%;
@@ -103,20 +123,20 @@ a:hover {
 #web_icon{
 
   padding:10px;
-  width:200px;
-  height:200px;
+  width:30%;
+  height:60%;
   margin:0, auto;
 }
 .button_nav{}
 
 #graphic_icon{
   padding:10px;
-  width:200px;
-  height:200px;
+  width: 40%;
+  height:50%;
 
 }
 #skills{
-  background-color: pink;
+  background-color:#81d4fa;
   min-height: 100%;
 }
 
